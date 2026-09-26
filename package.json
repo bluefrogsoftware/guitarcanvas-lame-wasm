@@ -1,0 +1,18 @@
+{
+  "name": "guitarcanvas-lame-wasm",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "LGPL-2.0-or-later",
+  "description": "WebAssembly build of the LAME MP3 encoder for Guitar Canvas audio export.",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    "./dist/lame-mp3.js": "./dist/lame-mp3.js"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  }
+}
