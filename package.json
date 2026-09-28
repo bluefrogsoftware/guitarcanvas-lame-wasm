@@ -7,7 +7,8 @@
   "files": [
     "dist",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "vendor/lame-3.100/README"
   ],
   "exports": {
     "./dist/lame-mp3.js": "./dist/lame-mp3.js"

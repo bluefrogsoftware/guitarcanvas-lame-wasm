@@ -105,10 +105,11 @@ path with a dynamic `import()`.
    `app/package.json` to the new commit SHA and run `npm install`, which
    re-runs `postinstall` and copies the three files into
    `public/assets/lame-mp3/` for web.
-4. For the iOS and Android Capacitor bundles, run the app's normal native
-   sync step (`npx cap sync`) after `npm install` so the updated static
-   assets are copied into the native project's bundled web directory before
-   the next native build.
+4. In the app, run `npm run licences:generate` to regenerate the licence
+   manifest with the package's upstream LAME attribution, then run
+   `npm run build`. For the iOS and Android Capacitor bundles, run
+   `npx cap sync` so the updated static assets are copied into the native
+   project's bundled web directory before the next native build.
 
 ## Licence and the written offer
 
